@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fashion Website Navbar</title>
+  <link rel="stylesheet" href="style.css">
+  
+
+</head>
+<body class="font-sans bg-[#ECE5C7]">
+
+  <!-- Navbar -->
+  <nav class="bg-[#C2DEDC] shadow-md sticky top-0 z-50 transition-all duration-300 ease-in-out">
+    <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+      <!-- Logo -->
+      <a href="#home" class="text-2xl font-bold text-[#116A7B] hover:text-[#0e5564] transition duration-300 transform hover:scale-105">
+        FashionHub
+      </a>
+
+      <!-- Navigation Links (Hidden on small screens) -->
+      <div class="hidden md:flex space-x-6">
+        <a href="#home" class="text-[#116A7B] hover:text-[#0e5564] transition duration-300 ease-in-out transform hover:translate-y-[-2px]">Home</a>
+        <a href="#shop" class="text-[#116A7B] hover:text-[#0e5564] transition duration-300 ease-in-out transform hover:translate-y-[-2px]">Shop</a>
+        <a href="#collections" class="text-[#116A7B] hover:text-[#0e5564] transition duration-300 ease-in-out transform hover:translate-y-[-2px]">Collections</a>
+        <a href="#about-us" class="text-[#116A7B] hover:text-[#0e5564] transition duration-300 ease-in-out transform hover:translate-y-[-2px]">About Us</a>
+        <a href="#contact" class="text-[#116A7B] hover:text-[#0e5564] transition duration-300 ease-in-out transform hover:translate-y-[-2px]">Contact</a>
+      </div>
+
+      <!-- Sign In Button -->
+      <button class="hidden md:inline-block bg-[#116A7B] text-white px-6 py-2 rounded-full hover:bg-[#0e5564] transition duration-300 ease-in-out transform hover:scale-105">
+        Sign In
+      </button>
+
+      <!-- Mobile Menu Button (Visible on small screens) -->
+      <button id="menu-btn" class="md:hidden block focus:outline-none">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-[#116A7B] hover:text-[#0e5564] transition duration-300 ease-in-out transform hover:scale-110" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+        </svg>
+      </button>
+    </div>
+
+    <!-- Mobile Menu Dropdown -->
+    <div id="mobile-menu" class="hidden md:hidden bg-[#CDC2AE] shadow-lg">
+      <div class="px-6 py-4 space-y-4">
+        <a href="#home" class="block text-[#116A7B] hover:text-[#0e5564] transition duration-300 ease-in-out transform hover:translate-y-[-2px]">Home</a>
+        <a href="#shop" class="block text-[#116A7B] hover:text-[#0e5564] transition duration-300 ease-in-out transform hover:translate-y-[-2px]">Shop</a>
+        <a href="#collections" class="block text-[#116A7B] hover:text-[#0e5564] transition duration-300 ease-in-out transform hover:translate-y-[-2px]">Collections</a>
+        <a href="#zbout-us" class="block text-[#116A7B] hover:text-[#0e5564] transition duration-300 ease-in-out transform hover:translate-y-[-2px]">About Us</a>
+        <a href="#contact" class="block text-[#116A7B] hover:text-[#0e5564] transition duration-300 ease-in-out transform hover:translate-y-[-2px]">Contact</a>
+        <button class="w-full bg-[#116A7B] text-white px-6 py-2 rounded-full hover:bg-[#0e5564] transition duration-300 ease-in-out transform hover:scale-105">
+          Sign In
+        </button>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- Hero Section -->
+  <section id="home" class="relative overflow-hidden">
+    <!-- Animated Background -->
+    <div class="absolute inset-0 z-0">
+      <div class="absolute top-0 left-0 w-full h-full bg-[#C2DEDC] opacity-90"></div>
+      <div class="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-[#C2DEDC] to-[#CDC2AE] opacity-50 animate-background-move"></div>
+    </div>
+
+    <!-- Content -->
+    <div class="relative z-10 flex flex-col items-center justify-center min-h-screen text-center px-6">
+      <h1 class="text-6xl md:text-8xl font-bold text-[#116A7B] drop-shadow-md animate-fade-in">
+        Elevate Your Style
+      </h1>
+      <p class="mt-4 text-xl md:text-2xl text-[#116A7B] font-medium animate-fade-in delay-300">
+        Discover the latest trends in fashion
+      </p>
+      <div class="mt-8 space-x-4 animate-fade-in delay-500">
+        <a href="#" class="inline-block bg-[#116A7B] text-white px-8 py-4 rounded-full hover:bg-[#0e5564] transition duration-300 ease-in-out transform hover:scale-105">
+          Shop Now
+        </a>
+        <a href="#" class="inline-block bg-white text-[#116A7B] px-8 py-4 rounded-full border border-[#116A7B] hover:bg-[#116A7B] hover:text-white transition duration-300 ease-in-out transform hover:scale-105">
+          Learn More
+        </a>
+      </div>
+    </div>
+  </section>
+ 
+   <!-- Featured Collections Section -->
+   <section id="shop" class="py-20 bg-[#CDC2AE]">
+     <div class="container mx-auto px-6 text-center">
+       <!-- Heading -->
+       <h2 class="text-4xl md:text-5xl font-bold text-[#116A7B] mb-8 animate-fade-in">Featured Collections</h2>
+       <p class="text-lg text-gray-700 mb-16 animate-fade-in delay-300">Explore our latest trends and timeless styles designed for every occasion.</p>
+ 
+       <!-- Collection Grid -->
+       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+         <!-- Collection Card 1 -->
+         <div class="relative bg-white rounded-lg shadow-lg overflow-hidden group hover:scale-105 transition duration-300 ease-in-out animate-fade-in delay-500">
+           <img src="/young-woman-with-shopping-bags-beautiful-dress.jpg" alt="Collection 1" class="w-full h-64 object-cover group-hover:scale-110 transition duration-500 ease-in-out">
+           <div class="p-6">
+             <h3 class="text-xl font-semibold text-[#116A7B]">Summer Styles</h3>
+             <p class="text-gray-700 mt-2">Stay cool and stylish this summer with our vibrant collection.</p>
+             <a href="#" class="mt-4 inline-block bg-[#116A7B] text-white px-6 py-2 rounded-full hover:bg-[#0e5564] transition duration-300">
+               Shop Now
+             </a>
+           </div>
+         </div>
+ 
+         <!-- Collection Card 2 -->
+         <div class="relative bg-white rounded-lg shadow-lg overflow-hidden group hover:scale-105 transition duration-300 ease-in-out animate-fade-in delay-700">
+           <img src="/group-women-spending-time-together.jpg" alt="Collection 2" class="w-full h-64 object-cover group-hover:scale-110 transition duration-500 ease-in-out">
+           <div class="p-6">
+             <h3 class="text-xl font-semibold text-[#116A7B]">Winter Essentials</h3>
+             <p class="text-gray-700 mt-2">Wrap up in warmth with our cozy winter collection.</p>
+             <a href="#" class="mt-4 inline-block bg-[#116A7B] text-white px-6 py-2 rounded-full hover:bg-[#0e5564] transition duration-300">
+               Shop Now
+             </a>
+           </div>
+         </div>
+ 
+         <!-- Collection Card 3 -->
+         <div class="relative bg-white rounded-lg shadow-lg overflow-hidden group hover:scale-105 transition duration-300 ease-in-out animate-fade-in delay-900">
+           <img src="/ladies-evening-dress-elegant-women-long-gown.jpg" alt="Collection 3" class="w-full h-64 object-cover group-hover:scale-110 transition duration-500 ease-in-out">
+           <div class="p-6">
+             <h3 class="text-xl font-semibold text-[#116A7B]">Evening Glamour</h3>
+             <p class="text-gray-700 mt-2">Step into elegance with our evening wear collection.</p>
+             <a href="#" class="mt-4 inline-block bg-[#116A7B] text-white px-6 py-2 rounded-full hover:bg-[#0e5564] transition duration-300">
+               Shop Now
+             </a>
+           </div>
+         </div>
+       </div>
+     </div>
+   </section>
+
+  <!-- Best Sellers Section -->
+  <section id="collections" class="py-20 bg-[#C2DEDC]">
+    <div class="container mx-auto px-6 text-center">
+      <!-- Heading -->
+      <h2 class="text-4xl md:text-5xl font-bold text-[#116A7B] mb-8 animate-fade-in">Best Sellers</h2>
+      <p class="text-lg text-gray-700 mb-16 animate-fade-in delay-300">Discover our most popular styles loved by customers worldwide.</p>
+
+      <!-- Product Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <!-- Product Card 1 -->
+        <div class="relative bg-white rounded-lg shadow-lg overflow-hidden group hover:scale-105 transition duration-300 ease-in-out animate-fade-in delay-500">
+          <img src="/confident-young-man-with-his-hand-pocket-gray-background.jpg" alt="Product 1" class="w-full h-64 object-cover group-hover:scale-110 transition duration-500 ease-in-out">
+          <div class="p-6">
+            <h3 class="text-xl font-semibold text-[#116A7B]">Classic Blazer</h3>
+            <p class="text-gray-700 mt-2">$99.99</p>
+            <a href="#" class="mt-4 inline-block bg-[#116A7B] text-white px-6 py-2 rounded-full hover:bg-[#0e5564] transition duration-300">
+              Add to Cart
+            </a>
+          </div>
+        </div>
+
+        <!-- Product Card 2 -->
+        <div class="relative bg-white rounded-lg shadow-lg overflow-hidden group hover:scale-105 transition duration-300 ease-in-out animate-fade-in delay-700">
+          <img src="/front-view-man-posing-outdoors.jpg" alt="Product 2" class="w-full h-64 object-cover group-hover:scale-110 transition duration-500 ease-in-out">
+          <div class="p-6">
+            <h3 class="text-xl font-semibold text-[#116A7B]">Denim Jacket</h3>
+            <p class="text-gray-700 mt-2">$79.99</p>
+            <a href="#" class="mt-4 inline-block bg-[#116A7B] text-white px-6 py-2 rounded-full hover:bg-[#0e5564] transition duration-300">
+              Add to Cart
+            </a>
+          </div>
+        </div>
+
+        <!-- Product Card 3 -->
+        <div class="relative bg-white rounded-lg shadow-lg overflow-hidden group hover:scale-105 transition duration-300 ease-in-out animate-fade-in delay-900">
+          <img src="/sitting-female-legs-boots-with-flowers-inside.jpg" alt="Product 3" class="w-full h-64 object-cover group-hover:scale-110 transition duration-500 ease-in-out">
+          <div class="p-6">
+            <h3 class="text-xl font-semibold text-[#116A7B]">Leather Boots</h3>
+            <p class="text-gray-700 mt-2">$129.99</p>
+            <a href="#" class="mt-4 inline-block bg-[#116A7B] text-white px-6 py-2 rounded-full hover:bg-[#0e5564] transition duration-300">
+              Add to Cart
+            </a>
+          </div>
+        </div>
+
+        <!-- Product Card 4 -->
+        <div class="relative bg-white rounded-lg shadow-lg overflow-hidden group hover:scale-105 transition duration-300 ease-in-out animate-fade-in delay-1100">
+          <img src="/beautiful-girl-standing-near-seaside-long-black-dress-daytime.jpg" alt="Product 4" class="w-full h-64 object-cover group-hover:scale-110 transition duration-500 ease-in-out">
+          <div class="p-6">
+            <h3 class="text-xl font-semibold text-[#116A7B]">Evening Dress</h3>
+            <p class="text-gray-700 mt-2">$149.99</p>
+            <a href="#" class="mt-4 inline-block bg-[#116A7B] text-white px-6 py-2 rounded-full hover:bg-[#0e5564] transition duration-300">
+              Add to Cart
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Customer Testimonials Section -->
+  <section class="py-20 bg-[#CDC2AE]">
+    <div class="container mx-auto px-6 text-center">
+      <!-- Heading -->
+      <h2 class="text-4xl md:text-5xl font-bold text-[#116A7B] mb-8 animate-fade-in">What Our Customers Say</h2>
+      <p class="text-lg text-gray-700 mb-16 animate-fade-in delay-300">Real stories from our happy customers who love our fashion.</p>
+
+      <!-- Testimonial Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Testimonial Card 1 -->
+        <div class="bg-white rounded-lg shadow-lg p-6 hover:scale-105 transition duration-300 ease-in-out animate-fade-in delay-500">
+          <div class="flex items-center justify-center mb-4">
+            <img src="/young-beautiful-girl-posing-black-leather-jacket-park.jpg" alt="Customer 1" class="w-12 h-12 rounded-full border-2 border-[#116A7B]">
+          </div>
+          <p class="text-gray-700 italic mb-4">"Absolutely love the quality and style of these clothes! Highly recommend."</p>
+          <h4 class="font-semibold text-[#116A7B]">Jane Doe</h4>
+          <p class="text-sm text-gray-500">Verified Buyer</p>
+        </div>
+
+        <!-- Testimonial Card 2 -->
+        <div class="bg-white rounded-lg shadow-lg p-6 hover:scale-105 transition duration-300 ease-in-out animate-fade-in delay-700">
+          <div class="flex items-center justify-center mb-4">
+            <img src="/porait-cute-boy-cafe.jpg" alt="Customer 2" class="w-12 h-12 rounded-full border-2 border-[#116A7B]">
+          </div>
+          <p class="text-gray-700 italic mb-4">"The customer service is amazing, and the clothes fit perfectly!"</p>
+          <h4 class="font-semibold text-[#116A7B]">John Smith</h4>
+          <p class="text-sm text-gray-500">Verified Buyer</p>
+        </div>
+
+        <!-- Testimonial Card 3 -->
+        <div class="bg-white rounded-lg shadow-lg p-6 hover:scale-105 transition duration-300 ease-in-out animate-fade-in delay-900">
+          <div class="flex items-center justify-center mb-4">
+            <img src="/portrait-young-smiling-pretty-girl-plaid-shirt-posing.jpg" alt="Customer 3" class="w-12 h-12 rounded-full border-2 border-[#116A7B]">
+          </div>
+          <p class="text-gray-700 italic mb-4">"I always find trendy outfits here that suit my style. Love it!"</p>
+          <h4 class="font-semibold text-[#116A7B]">Emily Johnson</h4>
+          <p class="text-sm text-gray-500">Verified Buyer</p>
+        </div>
+      </div>
+    </div>
+</section>
+
+  <!-- About Us Section -->
+  <section id="about-us" class="py-20 bg-[#C2DEDC]">
+    <div class="container mx-auto px-6 flex flex-col md:flex-row items-center">
+      <!-- Image -->
+      <div class="md:w-1/2 mb-8 md:mb-0 animate-fade-in delay-300">
+        <img src="/group-three-fashion-designers-working-atelier-with-laptop-papers.jpg" alt="About Us" class="w-full rounded-lg shadow-lg hover:scale-105 transition duration-300 ease-in-out">
+      </div>
+
+      <!-- Content -->
+      <div class="md:w-1/2 md:pl-12 text-center md:text-left animate-fade-in delay-500">
+        <h2 class="text-4xl md:text-5xl font-bold text-[#116A7B] mb-6">About Us</h2>
+        <p class="text-gray-700 text-lg mb-8">
+          We are passionate about creating high-quality, stylish fashion that empowers individuals to express themselves confidently. Our mission is to redefine modern fashion by blending timeless elegance with contemporary trends.
+        </p>
+        <p class="text-gray-700 text-lg mb-8">
+          From casual wear to formal attire, we curate collections that cater to every occasion and personality. With sustainability at our core, we strive to make fashion not just beautiful but also responsible.
+        </p>
+        <a href="#" class="inline-block bg-[#116A7B] text-white px-8 py-4 rounded-full hover:bg-[#0e5564] transition duration-300 ease-in-out transform hover:scale-105">
+          Learn More
+        </a>
+      </div>
+    </div>
+  </section>
+
+  
+    <!-- Newsletter Subscription Section -->
+    <section id="contact" class="py-20 bg-[#116A7B] text-white">
+      <div class="container mx-auto px-6 text-center animate-fade-in">
+        <!-- Heading -->
+        <h2 class="text-4xl md:text-5xl font-bold mb-6">Stay Updated</h2>
+        <p class="text-lg mb-12">Subscribe to our newsletter for exclusive offers, fashion tips, and the latest trends.</p>
+  
+        <!-- Subscription Form -->
+        <form class="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-4">
+          <input 
+            type="email" 
+            placeholder="Enter your email" 
+            class="w-full md:w-auto px-6 py-4 rounded-full bg-white text-gray-700 focus:outline-none focus:ring-2 focus:ring-[#C2DEDC] transition duration-300 ease-in-out"
+          >
+          <button 
+            type="submit" 
+            class="bg-[#C2DEDC] text-[#116A7B] px-8 py-4 rounded-full hover:bg-[#CDC2AE] transition duration-300 ease-in-out transform hover:scale-105"
+          >
+            Subscribe
+          </button>
+        </form>
+      </div>
+    </section>
+  <!-- Footer Section -->
+  <footer class="py-16 bg-[#116A7B] text-white">
+    <div class="container mx-auto px-6">
+      <!-- Columns -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 animate-fade-in">
+        <!-- Column 1: About Us -->
+        <div class="mb-8 md:mb-0 delay-300">
+          <h3 class="text-xl font-bold mb-4">About Us</h3>
+          <p class="text-gray-300">
+            We are passionate about creating high-quality, stylish fashion that empowers individuals to express themselves confidently.
+          </p>
+        </div>
+
+        <!-- Column 2: Quick Links -->
+        <div class="mb-8 md:mb-0 delay-500">
+          <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+          <ul class="space-y-2">
+            <li><a href="#" class="text-gray-300 hover:text-[#C2DEDC] transition duration-300">Home</a></li>
+            <li><a href="#" class="text-gray-300 hover:text-[#C2DEDC] transition duration-300">Shop</a></li>
+            <li><a href="#" class="text-gray-300 hover:text-[#C2DEDC] transition duration-300">Collections</a></li>
+            <li><a href="#" class="text-gray-300 hover:text-[#C2DEDC] transition duration-300">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Contact Us -->
+        <div class="delay-700">
+          <h3 class="text-xl font-bold mb-4">Contact Us</h3>
+          <p class="text-gray-300">Email: info@fashionhub.com</p>
+          <p class="text-gray-300">Phone: +123 456 7890</p>
+          <div class="flex space-x-4 mt-4">
+            <a href="#" class="hover:text-[#C2DEDC] transition duration-300">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 2v20m0 0l6-6m-6 6l-6-6" />
+              </svg>
+            </a>
+            <a href="#" class="hover:text-[#C2DEDC] transition duration-300">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9" />
+              </svg>
+            </a>
+            <a href="#" class="hover:text-[#C2DEDC] transition duration-300">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 10h4.764a2 2 0 011.789 2.894l-3.5 7A2 2 0 0115.263 21h-4.017c-.163 0-.326-.02-.485-.06L7 20m7-10V5a2 2 0 00-2-2h-.095c-.5 0-.905.405-.905.905 0 .714-.211 1.412-.608 2.006L7 11v9m7-10h-2M7 20H5a2 2 0 01-2-2v-6a2 2 0 012-2h2.5" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Copyright -->
+      <div class="mt-12 text-center text-gray-300 animate-fade-in delay-900">
+        <p>&copy; 2023 FashionHub. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+    
+
+
+ 
+ <!-- Tailwind CSS CDN -->
+ <script src="https://cdn.tailwindcss.com"></script>
+ <script src="script.js"></script>
+</body>
+</html>
